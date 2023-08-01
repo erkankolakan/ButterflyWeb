@@ -8,6 +8,7 @@ import Button from "react-bootstrap/Button"
 import {Butterfly} from './models/Butterfly';
 import { EffectComposer, Bloom, DepthOfField, Vignette } from '@react-three/postprocessing';
 
+
 function App() {
   return (
     <>
@@ -48,8 +49,10 @@ function App() {
           floatIntensity={0.2} // Up/down float intensity, works like a multiplier with floatingRange,defaults to 1
           floatingRange={[1, 1]} // Range of y-axis values the object will float within, defaults to [-0.1,0.1]
         >
-        <Butterfly scale={0.05} position={[-1,-12.5,0]}/>
-        <Butterfly scale={0.05} position={[12,-14,-10]}/>   
+
+          <Butterfly scale={0.05} position={[-1,-12.5,0]}/>
+
+          <Butterfly scale={0.05} position={[12,-14,-10]}/>   
         </Float>        
         {/* middle */}
 

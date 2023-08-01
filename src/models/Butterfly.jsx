@@ -8,14 +8,21 @@ Source: https://sketchfab.com/3d-models/butterfly-bb7a9781c2674e59a0f335fb8efb77
 Title: Butterfly
 */
 
-import React, { useRef } from 'react'
+import React, { useRef,useEffect } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
-
 
 export function Butterfly(props) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('./models/butterfly/scene-transformed.glb')
   const { actions } = useAnimations(animations, group)
+
+  useEffect(() => {
+    // actions.Object_0.play();
+    // actions.Object_0.timeScale = 0.15
+  })
+
+
+
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
@@ -57,7 +64,7 @@ export function Butterfly(props) {
                 </group>
               </group>
             </group>
-            <group name="Object_30" position={[0.768, 11.672, 1.185]} rotation={[-1.309, 0, 0]}>
+            <group visible={false}  name="Object_30"   position={[0.768, 11.672, 1.185]} rotation={[-1.309, 0, 0]}>
               <group name="TimeframeMainGroup_2">
                 <group name="Object_32">
                   <mesh name="Cylinder001_16_0" geometry={nodes.Cylinder001_16_0.geometry} material={materials.PaletteMaterial001} />
