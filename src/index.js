@@ -11,7 +11,7 @@ root.render(
     <header>
       <img src={logo} alt="logo"    />
     </header>
-    <Canvas>
+        <Canvas>
       <App />
     </Canvas>
   </React.StrictMode>
