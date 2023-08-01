@@ -55,3 +55,27 @@ header img{
   pointer-events: none;
 
 }
+
+
+h1{
+  font-size: 60px !important;
+}
+
+h2{
+  font-size: 40px !important;
+}
+
+p{
+  font-family: 'Roboto' , "sans-serif";
+  color: white;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.8em;
+}
+
+
+h1,h2,h3,h4,h5{
+  font-size: 'Italiana ,serif'; 
+  color: white;
+  margin-bottom: 32px !important;
+}
