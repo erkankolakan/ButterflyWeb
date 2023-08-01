@@ -1,5 +1,5 @@
 import './App.css';
-import { ScrollControls, Scroll, Environment, SpotLight, Float, Sparkles } from '@react-three/drei';
+import { ScrollControls, Scroll, Environment, SpotLight, Float, Sparkles, PositionalAudio } from '@react-three/drei';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
@@ -7,6 +7,9 @@ import Col from "react-bootstrap/Col"
 import Button from "react-bootstrap/Button"
 import {Butterfly} from './models/Butterfly';
 import { EffectComposer, Bloom, DepthOfField, Vignette } from '@react-three/postprocessing';
+import sound_1 from './sound/ambient.mp3'
+import sound_2 from './sound/ambient-rain.mp3'
+import sound_3 from './sound/src_sounds_ambient-happy.mp3' 
 
 
 function App() {
@@ -73,6 +76,17 @@ function App() {
         {/* sparkles */}
         <Sparkles noise={0} count={500} speed={0.01} size={0.6} color={"#FFD2BE"} opacity={10} scale={[20,100,20]}></Sparkles>
         <Sparkles noise={0} count={50} speed={0.01} size={10} color={"#FFF"} opacity={2} scale={[30,100,10]} ></Sparkles>
+
+
+        <group position={[0, 0, 0]}>
+          <PositionalAudio autoplay loop url={sound_1} distance={1.2} />
+        </group>    
+        <group position={[0, -20, 0]}>
+          <PositionalAudio autoplay loop url={sound_2} distance={3} />
+        </group>  
+        <group position={[0, -40, 0]}>
+          <PositionalAudio autoplay loop url={sound_3} distance={1.2} />
+        </group>              
 
         </Scroll>
 
