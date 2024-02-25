@@ -1,6 +1,7 @@
 # 3D Tasarımlı Web Site
 
-Kelebek temalı 3D tasarımlı, ses efektli modern web sitemi gezmek için aşağıdaki link e tıklayabilirsiniz
+Kelebek temalı 3D tasarımlı, ses efektli modern web sitemi gezmek için aşağıdaki link e tıklayabilirsiniz.
+!! kelebekler normalde kanat çırparak geziniyorlar bilgisayardan bilgisayara animasyonu değişiyor !!
 ### https://kelebek-xi.vercel.app/
 
 
